@@ -12,7 +12,7 @@ const { callSnmpGet } = require('./lib/callSnmpGet.js');
 // target hosts array can be a single host in the array or many
 let targets = ["172.28.0.12", "172.28.0.13"];
 
-// Create the array of SSH session objects needed to feed Promise all
+// Create the array of SNMP session objects needed to feed Promise all
 let snmpGetPromiseArr = [];
 
 for (let target of targets) {
